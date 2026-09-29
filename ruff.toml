@@ -1,0 +1,19 @@
+target-version = "py312"
+
+[lint]
+select = [
+    "E", "F", "W",
+    "C901",
+    "PLR0913",
+    "PLR0912",
+    "PLR0915",
+]
+ignore = ["E501", "F811"]
+
+[lint.mccabe]
+max-complexity = 10
+
+[lint.pylint]
+max-args = 5
+max-branches = 12
+max-statements = 50
